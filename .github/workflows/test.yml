@@ -1,0 +1,9 @@
+name: Test all
+
+on:
+  workflow_call:
+
+jobs:
+  test-converter:
+    name: Run coordinates converter tests
+    uses: ./.github/workflows/test-converter.yml
